@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<body>
+<article class="card">
+    <h1 th:text="${event.name}">Name</h1>
+    <p class="muted" th:text="${#temporals.format(event.dateTime, 'EEEE, dd MMM yyyy HH:mm')}"></p>
+    <p><b>Venue:</b> <span th:text="${event.venue}"></span></p>
+    <p th:text="${event.description}"></p>
+
+    <form th:if="${#authorization.expression('isAuthenticated()')}" th:action="@{'/events/' + ${event.id} + '/register'}" method="post">
+        <button class="btn">Register</button>
+    </form>
+    <p th:if="${registered}" class="success">Registration successful! A confirmation email was (attempted to be) sent.</p>
+    <p th:if="${#authorization.expression('isAnonymous()')}" class="muted">Please <a th:href="@{/login}">login</a> to register.</p>
+</article>
+</body>
+</html>
