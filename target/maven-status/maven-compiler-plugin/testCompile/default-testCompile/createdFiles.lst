@@ -1,1 +1,10 @@
-com\eventsphere\EventSphereApplicationTests.class
+com\eventsphere\web\AuthControllerTest.class
+com\eventsphere\service\UserServiceTest.class
+com\eventsphere\EventSphereApplicationTest.class
+com\eventsphere\service\DbUserDetailsServiceTest.class
+com\eventsphere\web\AdminControllerTest.class
+com\eventsphere\web\EventControllerTest.class
+com\eventsphere\web\HomeControllerTest.class
+com\eventsphere\service\EmailServiceTest.class
+com\eventsphere\config\SecurityConfigTest.class
+com\eventsphere\service\EventServiceTest.class

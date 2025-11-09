@@ -31,13 +31,13 @@ public class EventController {
         return "events/details";
     }
 
-    @PostMapping("/{id}/register")
-    public String register(@PathVariable Long id, @AuthenticationPrincipal User user, Model model){
-        Event event = eventService.get(id);
-        email.send(user.getUsername(), "Event Registration - " + event.getName(),
-                "You are registered for " + event.getName() + " at " + event.getVenue());
-        model.addAttribute("event", event);
-        model.addAttribute("registered", true);
-        return "events/details";
-    }
+    // @PostMapping("/{id}/register")
+    // public String register(@PathVariable Long id, @AuthenticationPrincipal User user, Model model){
+    //     Event event = eventService.get(id);
+    //     email.send(user.getUsername(), "Event Registration - " + event.getName(),
+    //             "You are registered for " + event.getName() + " at " + event.getVenue());
+    //     model.addAttribute("event", event);
+    //     model.addAttribute("registered", true);
+    //     return "events/details";
+    // }
 }

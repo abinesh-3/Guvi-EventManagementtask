@@ -1,1 +1,10 @@
-D:\guvi\eventsphere\src\test\java\com\eventsphere\EventSphereApplicationTests.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\config\SecurityConfigTest.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\EventSphereApplicationTest.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\service\DbUserDetailsServiceTest.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\service\EmailServiceTest.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\service\EventServiceTest.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\service\UserServiceTest.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\web\AdminControllerTest.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\web\AuthControllerTest.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\web\EventControllerTest.java
+D:\guvi\eventsphere\src\test\java\com\eventsphere\web\HomeControllerTest.java
