@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y maven
 RUN mvn dependency:go-offline
 
 # Build the JAR
-RUN mvn -B -DskipTests clean package
+RUN mvn -B -DskipTests clean package spring-boot:repackage
+
 
 # Expose the application port
 EXPOSE 8080
