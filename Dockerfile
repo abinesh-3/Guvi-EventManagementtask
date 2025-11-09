@@ -20,5 +20,5 @@ RUN mvn -B -DskipTests clean package
 # Expose the application port
 EXPOSE 8080
 
+ENTRYPOINT ["sh", "-c", "java -jar target/*.jar"]
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
